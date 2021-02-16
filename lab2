@@ -1,26 +1,26 @@
 package lab2object;
 
-class Sweet {
+class Candy {
 	double price;
 	String name = "chiher";
 	double weight = 30; //jin n gramm-aar//
 	String size = "Tom";
 }
 
-class chumugtei extends Sweet{
+class chumugtei extends Candy{
 	String chumug = "chumugtei";
 }
 
-class chocolate extends Sweet {
+class chocolate extends Candy {
 	String chocolate = "chocolatetai";
 }
 
 
-class buramtai extends Sweet{
+class buramtai extends Candy{
 	String buram = "buramtai";
 }
 
-class Samartai extends Sweet{
+class Samartai extends Candy{
 	String samar = "gazriin samartai";
 }
 
@@ -105,12 +105,6 @@ public class main {
 		
 		System.out.println("niit chihriin too (amount) = " + amount);
 		
-	}
+	}	
 	
-		
-		
-	
-		
-		
-
 }
