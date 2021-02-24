@@ -1,0 +1,150 @@
+package Daalgavar2;
+import java.util.*;
+
+public class Pizza{
+
+    String name;
+    int unelgee;
+    public  Pizza(String name) {
+        this.name=name;
+    }
+    public void pr() {
+        // This constructor has one parameter, name.
+        System.out.println(" Pizza идэж байна. :" + name );
+    }
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+    	 Pizza p = new  Pizza(" Pizza");
+    	 Pizza a = new Hawaii("Gahain mahtai", 2);
+        Pizza b = new BBQ("Tahiani mahtai", 4);
+        Pizza c = new Buurunhiimahtai("uhriin mah", 3);
+        Pizza d = new jimstei("ananas", 1);
+        Pizza e = new Emart("holimog", 2);
+        Pizza f = new Pizzahut("mahtai", 9);
+        Pizza g = new Hawaii("Soucetai", 6);
+        Pizza h = new BBQ("Olonturliin", 8);
+        Pizza i = new Buurunhiimahtai("zaidsandelbeet", 5);
+        Pizza j = new Hawaii("byaslagtaipizza", 7);
+        Pizza k = new BBQ("saliyamtaipizza", 9);
+        Pizza l = new Buurunhiimahtai("shineergarsan", 3);
+        Pizza m = new Hawaii("booronhii", 2);
+        Pizza n = new BBQ("moogteipizza", 4);
+
+        ArrayList< Pizza> al = new ArrayList< Pizza>();
+        al.add(p);//Пиззаны обьектыг нэмэх
+        al.add(a);
+        al.add(b);
+        al.add(c);
+        al.add(d);
+        al.add(e);
+        al.add(f);
+        al.add(g);
+        al.add(h);
+        al.add(i);
+        al.add(j);
+        al.add(k);
+        al.add(l);
+        al.add(m);
+        al.add(n);
+        al.forEach(Pizza::pr);
+
+    }
+
+}
+class Hawaii extends  Pizza{
+
+
+    int unelgee;
+    public Hawaii(String name,int unelgee) {
+        super(name);
+        this.unelgee=unelgee;
+
+    }
+
+    public void pr1() {
+        // This constructor has one parameter, name.
+        System.out.println("Hawaii pizza sonithoj baina:" + name );
+    }
+
+
+}
+class BBQ extends  Pizza{
+
+    int unelgee;
+    public BBQ(String name,int unelgee) {
+        super(name);
+        this.unelgee=unelgee;
+
+    }
+
+    public void pr2() {
+        // This constructor has one parameter, name.
+        System.out.println("BBQ pizza sonirhoj baina:" + name );
+    }
+
+
+}
+
+class Buurunhiimahtai extends  Pizza{
+
+    int unelgee;
+    public Buurunhiimahtai(String name,int unelgee) {
+        super(name);
+        this.unelgee=unelgee;
+
+    }
+    public void pr3() {
+        // This constructor has one parameter, name.
+        System.out.println("Buurunhiimahtai pizza sonirhoj baina:" + name );
+    }
+
+
+}
+class jimstei extends  Pizza{
+
+
+    int unelgee;
+    public jimstei(String name,int unelgee) {
+        super(name);
+        this.unelgee=unelgee;
+
+    }
+
+    public void pr4() {
+        // This constructor has one parameter, name.
+        System.out.println("jimstei pizza sonithoj baina:" + name );
+    }
+
+
+}
+class Emart extends  Pizza{
+
+    int unelgee;
+    public Emart(String name,int unelgee) {
+        super(name);
+        this.unelgee=unelgee;
+
+    }
+
+    public void pr5() {
+        // This constructor has one parameter, name.
+        System.out.println("Emart pizza sonirhoj baina:" + name );
+    }
+
+
+}
+
+class Pizzahut extends  Pizza{
+
+    int unelgee;
+    public Pizzahut(String name,int unelgee) {
+        super(name);
+        this.unelgee=unelgee;
+
+    }
+    public void pr6() {
+        // This constructor has one parameter, name.
+        System.out.println("Pizzahut pizza sonirhoj baina:" + name );
+    }
+}
