@@ -1,0 +1,25 @@
+http://www.plantuml.com/plantuml/png/POvDIWGn48NtEKMHbSwGOGOlC2vTUm0fqu4ETYfD_GWgtjsGRbhjsIGLtlUzr5KKMQrCJjuopSXO84ueygZA-TKqFSLAp_apmTdr0ER4KWc-70J2aXmStp5gflGInvfZkhjttolwF_XZi8baR2GSuvXfcKpmrlsLGgn6oXzjaihQBZLgvyojk-c3STVN_Vpbu2642lvyEbtyRXTmk_TAXN00_x3H6zRpNjYA-xHyuww91YlJ3m00
+@startuml
+skinparam classAttributeIconSize 0
+class person {
+ -name
+ +vactine_choice()
+}
+class vactine_choice{
+ -name
+ +russia()
+ +china()
+ +usa()
+}
+class vactine{
+ -name
+ -country
+ -sort
+ -tun
+ +price()
+ +dur()
+}
+person "1*" --o "0..1" vactine_choice 
+vactine_choice "0..1" --* "3" vactine 
+vactine "0..*" -- "1..*" person
+@enduml
