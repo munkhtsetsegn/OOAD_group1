@@ -1,0 +1,24 @@
+@startuml
+skinparam classAttributeIconSize 0
+class Person {
+ -name
+ +vaccine_choice()
+}
+class Vaccine_choice{
+ -name
+ +russia()
+ +china()
+ +usa()
+}
+class Vaccine{
+ -name
+ -country
+ -sort
+ -tun
+ +price()
+ +dur()
+}
+Person "1*" --o "0..1" Vaccine_choice 
+Vaccine_choice "0..1" --* "3" Vaccine 
+Vaccine "0..*" -- "1..*" Person
+@enduml
